@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2? family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --veryDarkBlue: rgb(9, 11, 26); /* (main background) */
+    --darkDesaturatedBlue: rgb(27, 25, 56); /* (card background) */
+    --softViolet: rgb(170, 92, 219); /* (accent) */
+
+    --White: rgb(255, 255, 255); /* (main heading, stats) */
+    --slightlyTransparentWhite: rgba(255, 255, 255, 0.75); /* (main paragraph) */
+    --slightlyTransparentWhite: rgba(255, 255, 255, 0.6); /* (stat headings) */
+    --layer: rgba(110, 30, 160, .7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    padding: 90px 20px 45px 20px;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background: var(--veryDarkBlue);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        'main'
+        'footer'
+    ;
+    gap: 90px;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+    grid-area: main;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: var(--darkDesaturatedBlue);
+    width: 321px;
+    height:728px;
+}
+
+.banner {
+    width: 100%;
+    height: 239px;
+    background: linear-gradient( var(--layer), var(--layer)), 
+        url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 40px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: var(--White);
+}
+.title span {
+    color: var(--softViolet);
+}
+.text {
+    color: var(--slightlyTransparentWhite);
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* ---------- STARS ---------- */
+.stars {
+    width: 100%;
+    height: 210px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.starsDetails {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    gap: 8px;
+}
+.concept {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--slightlyTransparentWhite);
+}
+
+
+/* ---------- FOOTER ---------- */
+.footer {
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+    color: var(--White);
+}
+
+.footer div {
+    color: var(--veryLightGray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: rgb(176, 192, 255);
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 300ms ease;
+}
+
+.attribution a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 790px) {
+    .footer div {
+        margin: 0 auto;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer div p {
+        width: auto;
+        display: flex;
+        font-size: 1rem;
+        display: flex;
+        gap: 10px;
+    }
+}
