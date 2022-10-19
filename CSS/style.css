@@ -120,7 +120,6 @@
 
 /* ---------- FOOTER ---------- */
 .footer {
-    border: 1px solid red;
     grid-area: footer;
     width: 100%;
     height: auto;
