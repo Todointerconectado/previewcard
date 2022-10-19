@@ -1,12 +1,20 @@
 # Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Stats preview card component coding challenge](./images/miniatura.png)
 
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+
+**To do this challenge, you need a basic understanding of HTML and CSS.**
+
+## Challenge completed by Francisco Carusso! 💯
+
+Thanks for checking out this front-end coding challenge.
+
+Access the resolution of the challenge: [Todointerconectado.com/previewcard/](https://todointerconectado.com/previewcard/)
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
