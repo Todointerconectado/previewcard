@@ -120,6 +120,7 @@
 
 /* ---------- FOOTER ---------- */
 .footer {
+    border: transparent;
     grid-area: footer;
     width: 100%;
     height: auto;
