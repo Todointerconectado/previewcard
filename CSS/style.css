@@ -23,7 +23,7 @@
     height: 100%;
     scroll-behavior: smooth;
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     background: var(--veryDarkBlue);
     display: grid;
     grid-template-columns: 1fr;
@@ -71,6 +71,7 @@
 }
 
 .title {
+    font-family: 'Inter', sans-serif;
     font-size: 25px;
     text-align: center;
     color: var(--White);
@@ -79,11 +80,11 @@
     color: var(--softViolet);
 }
 .text {
+    font-family: 'Inter', sans-serif;
     color: var(--slightlyTransparentWhite);
     font-size: 14px;
     text-align: center;
     line-height: 25px;
-    font-family: 'Lexend Deca', sans-serif;
 }
 
 
@@ -97,7 +98,6 @@
     flex-grow: 1;
 }
 .starsDetails {
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -106,9 +106,9 @@
     align-items: center;
     font-size: 26px;
     font-weight: 700;
-    text-transform: uppercase;
     gap: 8px;
 }
+
 .concept {
     font-size: 12px;
     font-weight: 400;
@@ -116,7 +116,6 @@
     text-transform: uppercase;
     color: var(--slightlyTransparentWhite);
 }
-
 
 /* ---------- FOOTER ---------- */
 .footer {
@@ -136,8 +135,9 @@
 }
 
 .attribution a {
+    margin-left: 5px;
     border-radius: 5px;
-    padding: 3px 10px;
+    padding: 3px 5px;
     color: rgb(176, 192, 255);
     letter-spacing: 1px;
     text-decoration: none;
@@ -145,10 +145,68 @@
 }
 
 .attribution a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(27, 25, 56, .5);
 }
 
-@media screen and (min-width: 790px) {
+.attribution a:active {
+    background: rgb(176, 192, 255);
+    color: rgb(27, 25, 56, .5);
+}
+
+@media screen and (min-width: 1250px) {
+    /* ---- MAIN ---- */
+    .main {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            'card banner'
+        ;
+    }
+
+    .card {
+        grid-area: card;
+        padding: 75px 110px 75px 70px;
+        width: 100%;
+        max-width: 573px;
+        height: auto;
+        gap: 80px;
+    }
+
+    .title {
+        font-size: 2.5em;
+        text-align: left;
+    }
+
+    .text {
+        margin-right: 70px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .stars {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    
+    .starsDetails {
+        align-items: flex-start;
+    }
+
+    .banner {
+        grid-area: banner;
+        width: 625px;
+        height: auto;
+        background: linear-gradient( var(--layer), var(--layer)), 
+        url(../images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* ---- FOOTER ---- */
     .footer div {
         margin: 0 auto;
         letter-spacing: 2px;
@@ -159,9 +217,9 @@
 
     .footer div p {
         width: auto;
+        font-size: .9rem;
         display: flex;
-        font-size: 1rem;
-        display: flex;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
 }

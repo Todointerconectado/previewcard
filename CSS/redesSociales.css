@@ -76,13 +76,4 @@
     .container-contacts {
         margin-top: 30px;
     }
-
-    .container-contacts_figure-img {
-        width: 50px;
-    }
-
-    /* ---- Boton de subida ----*/
-    .fleche{
-        width: 50px;
-    }
 }
