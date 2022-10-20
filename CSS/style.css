@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 :root {
-    --veryDarkBlue: rgb(9, 11, 26, .99); /* (main background) */
+    --veryDarkBlue: rgb(9, 11, 26, .9); /* (main background) */
     --darkDesaturatedBlue: rgb(27, 25, 56); /* (card background) */
     --softViolet: rgb(170, 92, 219); /* (accent) */
 
@@ -154,7 +154,7 @@
     color: rgb(27, 25, 56, .5);
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     /* ---- MAIN ---- */
     .main {
         width: 100%;
@@ -226,7 +226,7 @@
     }
 }
 
-@media screen and (min-width: 1250px) {
+@media only screen and (min-width: 1250px) {
     /* ---- MAIN ---- */
     .main {
         grid-template-columns: auto auto;
