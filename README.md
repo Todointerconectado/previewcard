@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](./images/miniatura.png)
+![Design preview for the Stats preview card component coding challenge](./images/miniatura.jpg)
 
 ## Welcome! 👋
 
